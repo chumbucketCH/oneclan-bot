@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const $ = require('jquery');
 const client = new Discord.Client();
-const gameset = require('./settings.json').gameset;
 var compChannel = "399529102371192833";
 var currentCompId = "412663727662432281";
 var currentCmlId = "412663729310662656";
@@ -17,7 +16,7 @@ var lastCmlId="412663797388410895";
 //const slayEmoji,attkEmoji,agilEmoji,consEmoji,cookEmoji,craftEmoji,defEmoji,farmEmoji,fmEmoji,fishEmoji,fletchEmoji,herbEmoji,hpEmoji,huntEmoji,prayEmoji,rangeEmoji,rcEmoji,smithEmoji,strEmoji,thievEmoji,wcEmoji;
 client.on('ready',() => {
 	console.log('I\'m Online');
-	client.user.setActivity(gameset)
+	client.user.setActivity("OneClan");
 
 });
 
