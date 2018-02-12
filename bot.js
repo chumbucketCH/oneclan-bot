@@ -26,7 +26,7 @@ client.on('ready',() => {
 
 var prefix = "oc&"
 client.on('message', message => {
-	var start = new Date().getTime();
+	
 	console.log("Message: "+message.content);
 	if(!message.content.startsWith(prefix))return;
 
@@ -34,8 +34,6 @@ client.on('message', message => {
 
 	if (message.content.startsWith(prefix + 'ping')) {//ping tester
 		console.log("PING COMMAND");
-		message.channel.send('pong :ping_pong: **'+(new Date().getTime() - start)+' ms**');
-
 		message.channel.send(`pong :ping_pong: \`${Date.now() - message.createdTimestamp} ms \``);
 
 	}else if(message.content.startsWith(prefix + 'setgame')){//game setter
