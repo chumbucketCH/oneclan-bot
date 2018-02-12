@@ -1,0 +1,15 @@
+{
+  "name": "oneclan",
+  "version": "0.0.1",
+  "description": "OneClan's official bot",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "author": "chumbucketCH",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "jquery": "^3.3.1"
+  }
+}
